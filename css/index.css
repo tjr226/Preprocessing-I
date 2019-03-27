@@ -1,1 +1,251 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  font-family: Frutiger, "Frutiger Linotype", Calibri, "Gill Sans";
+}
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+.italic {
+  font-style: italic;
+}
+.test-color {
+  color: red;
+}
+.test-mixin {
+  font-style: italic;
+  color: red;
+}
+header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  display: flex;
+}
+header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 10px 0px 10px 0px;
+}
+.top-box {
+  background-color: lightgray;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.top-box-button {
+  color: white;
+  background-color: darkgrey;
+  width: 20%;
+  text-align: center;
+  border-radius: 8px;
+}
+.headshot {
+  width: 30%;
+}
+.top-box-middle-border {
+  border-top: 1px solid darkgray;
+  padding: 20px 0px 10px 0px;
+}
+.middle-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .middle-columns {
+    flex-direction: column;
+  }
+}
+.middle-column-left {
+  display: flex;
+  width: 45%;
+}
+.middle-column-right {
+  display: flex;
+  width: 45%;
+}
+.work-history-table {
+  width: 100%;
+  border: 1px solid red;
+}
+.work-history-table th tr {
+  text-align: center;
+  border: 1px solid red;
+}
+.work-history-table tr {
+  font-weight: bold;
+  padding: 10px;
+}
+.work-history-table td {
+  font-weight: normal;
+  padding: 10px;
+}
+.work-history-table tr:nth-child(even) {
+  background-color: lightgrey;
+}
+.talents li {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 20px;
+  width: 50%;
+}
+footer {
+  color: white;
+  background-color: darkgrey;
+  text-align: center;
+  padding: 20px 0px 30px 0px;
+}
