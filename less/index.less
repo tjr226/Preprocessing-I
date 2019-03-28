@@ -4,6 +4,14 @@
    License: none (public domain)
 */
 
+@import 'variables.less';
+@import 'mixins.less';
+
+
+@import "header.less";
+
+// comment 234
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,3 +65,123 @@ html, body {
     height: 100%;
 }
 
+.container {
+	width: 80%;
+	margin: auto;
+	font-size: 20px;
+	font-family: @resume-font-stack;
+
+	// color:blue;
+	@media (max-width: 700px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+	// comment to re-pre-process
+
+}
+	
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+	
+
+
+
+	.top-box {
+		background-color:lightgray;
+		width:100%;
+		padding-left: 5%;
+		padding-right: 5%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-box-button {
+		color: @darker-background-text;
+		background-color: @darker-background;
+		width: 20%;
+		text-align: center;
+		border-radius: 8px;
+	}
+
+	.headshot {
+		width: 30%;
+		//   padding-left: 5%
+	}
+
+	.top-box-middle-border {
+		border-top: 1px solid darkgray;
+		padding: 20px 0px 10px 0px;
+	}
+
+	.middle-columns {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+// 
+		@media (max-width: 500px) {
+			flex-direction:column;
+			color: blue;
+		}
+	}
+
+	.middle-column-left {
+		display:flex;
+		width: 45%
+	}
+
+	.middle-column-right {
+		display: flex;
+		width: 45%;
+
+		@media (max-width: 500px) {
+			color:blue;
+		}
+	}
+
+	.work-history-table {
+		width: 100%;
+		border: 1px solid red;
+	}
+
+	.work-history-table th tr {
+		text-align: center;
+		border: 1px solid red;
+	}
+	.work-history-table tr{
+		font-weight: bold;
+		padding: 10px;
+	}
+
+	.work-history-table td{
+		font-weight: normal;
+		padding: 10px;
+	}
+
+	.work-history-table tr:nth-child(even){
+		background-color: lightgrey;
+	}
+
+	.talents li {
+		display:inline-block;
+		border:1px solid #000;
+		padding:20px;
+		width: 50%;
+	}
+
+	footer {
+		color: @darker-background-text;
+		background-color: @darker-background;
+		text-align: center;
+		padding: 20px 0px 30px 0px;
+	}
+
+// 
