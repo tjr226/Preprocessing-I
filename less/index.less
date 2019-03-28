@@ -4,6 +4,14 @@
    License: none (public domain)
 */
 
+@import 'variables.less';
+@import 'mixins.less';
+
+
+@import "header.less";
+
+// comment 234
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,14 +65,8 @@ html, body {
     height: 100%;
 }
 
-// variables
-
-@darker-background: darkgrey;
-@darker-background-text: white;
-@resume-font-stack: Frutiger, "Frutiger Linotype", Calibri, "Gill Sans";
-
 .container {
-	width: 50%;
+	width: 80%;
 	margin: auto;
 	font-size: 20px;
 	font-family: @resume-font-stack;
@@ -90,37 +92,8 @@ html, body {
 		font-size: 20px;
 	}
 	
-	.italic {
-		font-style: italic;
-	}
 
-	.test-color {
-		color:red;
-	}
-	.test-mixin {
-		.italic;
-		.test-color;
-	}
 
-	header {
-		margin-top: 5px;
-		display: flex;
-		justify-content: flex-end;
-	}
-	
-	header nav {
-		//   justify-content: center;
-		display: flex;
-		//   align-items: center;
-
-	}
-	
-	header nav a {
-		margin-left: 15px;
-		text-decoration: none;
-		padding: 10px 0px 10px 0px;
-	
-	}
 
 	.top-box {
 		background-color:lightgray;
@@ -156,6 +129,7 @@ html, body {
 // 
 		@media (max-width: 500px) {
 			flex-direction:column;
+			color: blue;
 		}
 	}
 
@@ -166,7 +140,11 @@ html, body {
 
 	.middle-column-right {
 		display: flex;
-		width: 45%
+		width: 45%;
+
+		@media (max-width: 500px) {
+			color:blue;
+		}
 	}
 
 	.work-history-table {

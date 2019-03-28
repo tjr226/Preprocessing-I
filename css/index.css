@@ -2,6 +2,29 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.italic {
+  font-style: italic;
+}
+.test-color {
+  color: red;
+}
+.test-mixin {
+  font-style: italic;
+  color: red;
+}
+.container header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container header nav {
+  display: flex;
+}
+.container header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 10px 0px 10px 0px;
+}
 html,
 body,
 div,
@@ -135,7 +158,7 @@ body {
   height: 100%;
 }
 .container {
-  width: 50%;
+  width: 80%;
   margin: auto;
   font-size: 20px;
   font-family: Frutiger, "Frutiger Linotype", Calibri, "Gill Sans";
@@ -154,29 +177,6 @@ h2 {
 }
 h3 {
   font-size: 20px;
-}
-.italic {
-  font-style: italic;
-}
-.test-color {
-  color: red;
-}
-.test-mixin {
-  font-style: italic;
-  color: red;
-}
-header {
-  margin-top: 5px;
-  display: flex;
-  justify-content: flex-end;
-}
-header nav {
-  display: flex;
-}
-header nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  padding: 10px 0px 10px 0px;
 }
 .top-box {
   background-color: lightgray;
@@ -208,6 +208,7 @@ header nav a {
 @media (max-width: 500px) {
   .middle-columns {
     flex-direction: column;
+    color: blue;
   }
 }
 .middle-column-left {
@@ -217,6 +218,11 @@ header nav a {
 .middle-column-right {
   display: flex;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .middle-column-right {
+    color: blue;
+  }
 }
 .work-history-table {
   width: 100%;
